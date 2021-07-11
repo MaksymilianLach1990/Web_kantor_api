@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Currency Exchange{% endblock %}
+
+{% block body %}
+
+  <h1>Check currency prices and convert how much<br> you will get from a specific currency</h1>
+
+  <form method='post' action="/exchange">
+    <div class="container">
+
+      <label for="currency"><b>Currency</b></label>
+      <select name="codes">
+        {% for name in codes %}
+          <option value="{{name}}">{{name}}</option>
+        {% endfor %}
+      </select><br>
+      <label for="value"><b>Value</b></label>
+      <<input type="text" placeholder="Enter value" name="value" required>
+      <button type="submit">Przelicz</button>
+
+    </div>
+
+  </form>
+
+
+
+{% endblock %}

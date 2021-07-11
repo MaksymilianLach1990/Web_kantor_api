@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td >
+                {% block body %}{% endblock %}
+            </td>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Currency</th>
+                            <th>Code</th>
+                            <th>bid</th>
+                            <th>Ask</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for number in range(13) %}
+                        <tr>
+                            <td>{{rates[number]["currency"]}}</td>
+                            <td>{{rates[number]['code']}}</td>
+                            <td>{{rates[number]['bid']}}</td>
+                            <td>{{rates[number]['ask']}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
