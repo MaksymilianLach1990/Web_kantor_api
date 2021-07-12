@@ -8,9 +8,9 @@ response = requests.get("http://api.nbp.pl/api/exchangerates/tables/C?format=jso
 file = response.json()
 rates = file[0]['rates']
 codes = []
-value = 0
 for name in file[0]['rates']:
     codes.append(name['code'])
+
 
 def exchange_price(value, currency):
     price = 0
@@ -26,19 +26,14 @@ def exchange():
     if request.method == 'POST':
         data = request.form
         value = data.get('value')
-        print(value)
         currency = data.get('codes')
 
+        print(value, currency)
         if int(value) >= 0 and currency in codes:
             answer = exchange_price(value, currency)
             return render_template("answer.html", value=value, currency=currency, answer=answer)
 
-
     return render_template("exchange.html", rates=rates, codes=codes)
-
-
-
-
 
 
 if __name__ == "__main__":

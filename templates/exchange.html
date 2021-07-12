@@ -4,7 +4,7 @@
 
 {% block body %}
 
-  <h1>Check currency prices and convert how much<br> you will get from a specific currency</h1>
+  <h1>Check exchange rates and enter the value you would like to receive,<br> and we will tell you how much you have to pay for it:</h1>
 
   <form method='post' action="/exchange">
     <div class="container">
@@ -16,7 +16,7 @@
         {% endfor %}
       </select><br>
       <label for="value"><b>Value</b></label>
-      <<input type="text" placeholder="Enter value" name="value" required>
+      <input type="text" placeholder="Enter value" name="value" required>
       <button type="submit">Przelicz</button>
 
     </div>

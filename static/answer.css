@@ -1,0 +1,14 @@
+body {
+    background-image: url(https://monitorfx.pl/wp-content/uploads/2016/05/waluty-%C5%9Bwiata-696x463.jpg);
+}
+
+div {
+    background-color: white;
+    color: blue;
+    border: 10px solid red;
+    padding: 30px;
+    font-size: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10%;
+}

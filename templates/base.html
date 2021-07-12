@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
     <title>{% block title %}{% endblock %}</title>
 
 </head>
 <body>
+    <div>
+        <h1 id="title"><strong>Welcome in my Exchange currency!</strong></h1>
+    </div>
     <table>
         <tr>
-            <td >
+            <td id="text">
                 {% block body %}{% endblock %}
             </td>
             <td>

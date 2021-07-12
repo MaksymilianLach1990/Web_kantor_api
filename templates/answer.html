@@ -1,12 +1,24 @@
 <!DOCTYPE html>
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Answer</title>
-</head>
-<body>
-  <div>
-    <h1>Aby zakupić {{value}} {{currensy}} musisz zapłacić {{answer}} PLN</h1>
-  </div>
-</body>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='answer.css') }}">
+        <title>Answer</title>
+
+    </head>
+
+
+    <body>
+
+      <div>
+
+        <h1>Aby zakupić {{value}} {{currency}} musisz zapłacić {{answer}} PLN</h1>
+
+      </div>
+
+    </body>
+
 </html>

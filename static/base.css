@@ -1,0 +1,44 @@
+body {
+        background-image: url(https://monitorfx.pl/wp-content/uploads/2016/05/waluty-%C5%9Bwiata-696x463.jpg);
+}
+
+#title {
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+table {
+    background-color: cornflowerblue;
+    border: 5px solid black;
+    padding: 2%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    padding: 10px
+}
+
+th {
+    border: 2px solid blue;
+    background-color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+#text {
+    background-color: white;
+}
+
+form {
+    color: black;
+    font-size: 30px;
+}
